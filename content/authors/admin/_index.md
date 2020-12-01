@@ -54,6 +54,8 @@ social:
  - icon: cv
    icon_pack: ai
    link: files/cv.pdf
+   
+{{% staticref "files/cv.pdf" %}}Download my CV{{% /staticref %}}
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
