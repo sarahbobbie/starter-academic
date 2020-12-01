@@ -5,6 +5,8 @@ title: Sarah Bobbitt
 # Is this the primary user of the site?
 superuser: true
 
+email: "sarah@bobbitt.ca"
+
 # Role/position
 role: Neuroscience MSc Candidate
 
