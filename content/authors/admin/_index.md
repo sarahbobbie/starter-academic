@@ -69,6 +69,4 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Sarah Bobbitt (she/her) is a Neuroscience MSc student in the NiSSL Lab at Western. She completed her BSc in Psychology and Biology at Acadia University, where she investigated sensorimotor learning and language representations in bilingual individuals. Her current research explores the development of stories to measure listening engagement in children with hearing loss.
