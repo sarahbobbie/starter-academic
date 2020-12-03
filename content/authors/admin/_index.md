@@ -70,6 +70,6 @@ user_groups:
 - Visitors
 ---
 
-Sarah Bobbitt (she/her) is a Neuroscience MSc student in the NiSSL Lab at Western. She completed her BSc in Psychology and Biology at Acadia University, where she investigated sensorimotor learning and language representations in bilingual individuals. Her current research explores the development of stories to measure listening engagement in children with hearing loss.
----
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "files/cv.pdf" "newtab" >}}resumé{{< /staticref >}}.
+Sarah Bobbitt (she/her) is a Neuroscience MSc student in the NiSSL Lab at Western. She completed her BSc in Psychology and Biology at Acadia University, where she investigated sensorimotor learning and language representations in bilingual individuals. Her current research explores the development of stories to measure listening engagement in children with hearing loss.\
+
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "files/cv.pdf" "newtab" >}}resumé{{< /staticref >}}. 
