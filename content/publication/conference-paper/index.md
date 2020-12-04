@@ -5,7 +5,7 @@ authors:
 date: "2020-11-17T00:00:00Z"
 doi: ""
 featured: true
- image:
+image:
   caption: Poster
   focal_point: ""
   preview_only: false
@@ -24,7 +24,7 @@ tags:
 title: "Distinct Speech Production and Speech Perception Regions in the Human Cerebellum: A Neuroimaging Meta-Analysis"
 #url_code: '#'
 #url_dataset: '#'
-#url_pdf: "media/CerebellumPoster.pdf"
+url_pdf: "media/CerebellumPoster.pdf"
 #url_poster: '#'
 #url_project: ""
 #url_slides: ""
