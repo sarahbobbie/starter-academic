@@ -6,8 +6,7 @@ date: "2020-11-17T00:00:00Z"
 doi: ""
 featured: true
  image:
-  caption: 'Image credit: 
-  "media/CerebellumPoster.pdf"
+  caption: Poster
   focal_point: ""
   preview_only: false
 links:
