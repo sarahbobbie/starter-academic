@@ -5,10 +5,11 @@ authors:
 date: "2020-11-17T00:00:00Z"
 doi: ""
 featured: true
-# image:
-#  caption: 'Image credit: #[**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
-#  focal_point: ""
-#  preview_only: false
+ image:
+  caption: 'Image credit: 
+  "media/CerebellumPoster.pdf"
+  focal_point: ""
+  preview_only: false
 links:
 projects:
 #- internal-project
