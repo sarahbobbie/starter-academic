@@ -17,7 +17,7 @@ links:
 publication: ""
 publication_short: ""
 publication_types:
-- "3"
+- "7"
 publishDate: "2020-04-01T00:00:00Z"
 slides: example
 summary: 
@@ -34,8 +34,6 @@ title: Investigating language representations and sensorimotor learning in bilin
 # url_video: '#'
 ---
 
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
+
 
 Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
