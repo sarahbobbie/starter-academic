@@ -17,7 +17,7 @@ links:
 publication: ""
 publication_short: ""
 publication_types:
-- "Undergraduate Thesis"
+- ""
 publishDate: "2020-04-01T00:00:00Z"
 slides: example
 summary: 
