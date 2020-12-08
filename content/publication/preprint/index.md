@@ -10,9 +10,9 @@ image:
   focal_point: ""
   preview_only: false
 links:
-- name: Custom Link
-  url: http://example.org
-projects:
+# - name: Custom Link
+#   url: http://example.org
+# projects:
 # - internal-project
 publication: ""
 publication_short: ""
