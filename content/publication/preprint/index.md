@@ -26,7 +26,7 @@ tags:
 title: Investigating language representations and sensorimotor learning in bilingual speakers 
 # url_code: '#'
 # url_dataset: '#'
-# url_pdf: "media/Sarah_Bobbitt_Thesis.pdf"
+url_pdf: "media/Sarah_Bobbitt_Thesis.pdf"
 # url_poster: '#'
 # url_project: '#'
 # url_slides: ""
