@@ -22,5 +22,4 @@ url_video: ""
 
 R is a programming language that can be used to accomplish a wide variety of tasks. When managing a research project, R can serve as an excellent from wrangling data to performing statistical analyses to producing effective visualizations. In this post, I will walk you through the basic steps of creating such visualizations using ggplot, a plotting package that provides a simple and intuitive way to create plots from your data.
 
-If you'd like to follow along with my plots, you can download this made-up dataset: 
-url_csv: "media/ggplot_tutorial_dataset.csv"
+If you'd like to follow along with my plots, you can {{< icon name="download" pack="fas" >}} download this made-up {{< staticref "media/ggplot_tutorial_dataset.csv" "newtab" >}}dataset{{< /staticref >}}. 
