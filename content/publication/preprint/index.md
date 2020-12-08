@@ -17,7 +17,7 @@ links:
 publication: ""
 publication_short: ""
 publication_types:
-- "3"
+- "Undergraduate Thesis"
 publishDate: "2020-04-01T00:00:00Z"
 slides: example
 summary: 
@@ -26,9 +26,9 @@ tags:
 title: Investigating language representations and sensorimotor learning in bilingual speakers 
 # url_code: '#'
 # url_dataset: '#'
-# url_pdf: '#'
+# url_pdf: "media/Sarah_Bobbitt_Thesis.pdf"
 # url_poster: '#'
-url_project: "media/Sarah_Bobbitt_Thesis.pdf"
+# url_project: '#'
 # url_slides: ""
 # url_source: '#'
 # url_video: '#'
