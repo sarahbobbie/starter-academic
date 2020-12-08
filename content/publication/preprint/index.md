@@ -36,4 +36,4 @@ title: Investigating language representations and sensorimotor learning in bilin
 
 
 
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+# Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
