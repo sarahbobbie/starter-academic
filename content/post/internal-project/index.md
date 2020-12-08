@@ -11,16 +11,16 @@ links:
   url: https://twitter.com/georgecushen
 slides: example
 summary: An example of using the in-built project page.
-tags:
-- Deep Learning
-title: Internal Project
+# tags:
+# - Deep Learning
+title: Creating Beautiful, Informative Visualizations with R
 url_code: ""
 url_pdf: ""
 url_slides: ""
 url_video: ""
 ---
 
-R is a programming language that can be used to accomplish a wide variety of tasks.
+R is a programming language that can be used to accomplish a wide variety of tasks. When managing a research project, R can serve as an excellent from wrangling data to performing statistical analyses to producing effective visualizations. In this post, I will walk you through the basic steps of creating such visualizations using ggplot, a plotting package that provides a simple and intuitive way to create plots from your data.
 
 Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
 
