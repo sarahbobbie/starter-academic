@@ -25,3 +25,7 @@ R is a programming language that can be used to accomplish a wide variety of tas
 If you'd like to follow along with my plots, you can download {{< staticref "media/ggplot_tutorial_dataset.csv" "newtab" >}}this made-up dataset{{< /staticref >}}.
 
 First, you'll need to have R import the data. I like to use the function read_csv, which imports your data as a tibble; if you import the data this way, you'll need to install tidyverse and call readr from the library. 
+
+install.packages("wesanderson")
+library("wesanderson")
+names(wes_palettes)
