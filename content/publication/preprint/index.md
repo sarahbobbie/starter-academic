@@ -17,7 +17,7 @@ links:
 publication: ""
 publication_short: ""
 publication_types:
-- ""
+- "3"
 publishDate: "2020-04-01T00:00:00Z"
 slides: example
 summary: 
