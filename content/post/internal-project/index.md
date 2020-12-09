@@ -25,11 +25,9 @@ R is a programming language that can be used to accomplish a wide variety of tas
 If you'd like to follow along with my plots, you can download {{< staticref "media/ggplot_tutorial_dataset.csv" "newtab" >}}this made-up dataset{{< /staticref >}}.
 
 First, you'll need to have R import the data. I like to use the function read_csv, which imports your data as a tibble; if you import the data this way, you'll need to install tidyverse and call readr from the library. Here's how I imported my data: 
-
----
+```{r}
 relationship_csv <- read_csv("./Assignment_4_Data.csv")
----
-
+```
 I recommend taking a look at {{< staticref "media/ggplot2-cheatsheet.pdf" "newtab" >}}this ggplot cheatsheet{{< /staticref >}}. It's an excellent reference for all aspects of ggplot, and can even be used to help you figure out which type of plot is most suitable for your data.
 
 You can also play around with the aesthetics of the plot. Select colours based on their names in R using {{< staticref "media/Rcolor.pdf" "newtab" >}}this handy chart,{{< /staticref >}} or enter the HEX values for any colour you like. You can even find some downloadable user-made colour palettes that will give your plots a nice cohesive look - [this Wes Anderson-inspired package](https://github.com/karthik/wesanderson) is a personal favourite. 
