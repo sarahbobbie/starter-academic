@@ -45,7 +45,7 @@ ggplot(data = tutorial_csv)
 ```
 Now let's add in our variables. After you specify your dataframe, you can specify your x and y variables in the plot's aesthetic properties:
 
-```
+```{r}
 ggplot(data = tutorial_csv, aes(x = Happiness, y = Optimism)) 
 ```
 
@@ -53,12 +53,12 @@ Next, we can add some information about the type of plot we're interested in. If
 
 ```{r}
 ggplot(data = tutorial_csv, aes(x = Happiness, y = Optimism)) +
-  geom_jitter()
+  geom_jitter(
 ```
 Now we need to fill those brackets with some information. Here, we can specify the colour of the dots, as well as their width and height.
 
 ```{r}
-ggplot(tutorial_csv, aes(x = Happiness, y = Optimism)) +
+ggplot(data = tutorial_csv, aes(x = Happiness, y = Optimism)) +
   geom_jitter(colour = "violetred4", width = 0.5, height = 0.5)
 ```
 You can also play around with the aesthetics of the plot. Select colours based on their names in R using {{< staticref "media/Rcolor.pdf" "newtab" >}}this handy chart,{{< /staticref >}} or enter the HEX values for any colour you like. You can even find some downloadable user-made colour palettes that will give your plots a nice cohesive look - [this Wes Anderson-inspired package](https://github.com/karthik/wesanderson) is a personal favourite. 
