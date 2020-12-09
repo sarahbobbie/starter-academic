@@ -101,6 +101,35 @@ ggplot(relationship_csv, aes(x = LT_Relationship, y = Age, fill = Sex)) +
 
 Voila! 
 
+Just for fun, let's build one more plot. This time, let's make a histogram comparing the distribution of Happiness scores by relationship status. You can probably guess how it starts:
+
+```{r}
+ggplot(relationship_csv, aes(x = Happiness, fill = LT_Relationship)) +
+```
+Then we need to specify the type of plot:
+
+```{r}
+ggplot(relationship_csv, aes(x = Happiness, fill = LT_Relationship)) +
+  geom_histogram()
+```
+
+Then we can fill in the specifications for how the plot will look. We can use "colour" to give our bars an outline. "alpha" can be used to specify the transparency of our bars - a value of 1 makes the bars completely opaque, and a value of 0 will make the bars entirely transparent. With position, we can determine how our relationship status information is going to be displayed. The bars can either be stacked on top of each other (position ' 'stack') or we can have them overlap ('identity'). Finally, with binwidth, you dictate how the x-axis data is grouped. In this case, we want to see the number of people with scres at each happiness value, so our bin width shuld be 1. Let's give it a try:
+
+```{r}
+ggplot(relationship_csv, aes(x = Happiness, fill = LT_Relationship)) +
+  geom_histogram(color="#e9ecef", alpha=0.6, position = 'identity', binwidth = 1) 
+```
+
+Last but not least, you can specify the colours of your bars:
+
+```{r}
+ggplot(relationship_csv, aes(x = Happiness, fill = LT_Relationship)) +
+  geom_histogram(color="#e9ecef", alpha=0.6, position = 'identity', binwidth = 1) +
+  scale_fill_manual(values=c("mediumseagreen", "chocolate2"))
+```
+
+And there you have it! 
+
 Experiment with different elements of the ggplot function. I have a lot of fun playing around with the colours of my plots. Select colours based on their names in R using {{< staticref "media/Rcolor.pdf" "newtab" >}}this handy chart,{{< /staticref >}} or enter the HEX values for any colour you like. You can even find some downloadable user-made colour palettes that will give your plots a nice cohesive look - [this Wes Anderson-inspired package](https://github.com/karthik/wesanderson) is a personal favourite. 
 
 Hopefully, with this tutorial, you have a basic understanding of the functionality of ggplot2 and how to use it in your own data visualizations. Now go forth and ggplot!
