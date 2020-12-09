@@ -1,5 +1,5 @@
 # Theme metadata
-name = "Minimal"
+name = "my_theme"
 
 # Is theme light or dark?
 light = true
@@ -10,7 +10,7 @@ primary = "#ECD1CA"
 # Menu
 menu_primary = "#9F295D"
 menu_text = "#430E00"
-menu_text_active = "#E7A396"
+menu_text_active = "#D9A34B"
 menu_title = "#D9A34B"
 
 # Home sections
