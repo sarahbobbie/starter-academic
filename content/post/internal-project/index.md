@@ -23,26 +23,31 @@ R is a programming language that can be used to accomplish a wide variety of tas
 If you'd like to follow along with my plots, you can download {{< staticref "media/ggplot_tutorial_dataset.csv" "newtab" >}}this made-up dataset{{< /staticref >}}.
 
 First, you'll need to have R import the data. I like to use the function read_csv, which imports your data as a tibble; if you import the data this way, you'll need to install tidyverse and call readr from the library. Alternativele, you can just call the entire tiduverse, which will also call ggplot2. Here's how I imported my data: 
+
 ```{r}
 install.packages("tidyverse")
 library(tidyverse)
 
 tutorial_csv <- read_csv("./ggplot_tutorial_dataset.csv")
 ```
+
 Now let's take a look at what kind of data we have. You'll see that we have columns for participant ID, age, and sex, followed by their relationship status ("Yes" indicates that the participant is in a long-term relationship, whereas "No" indicates that they are not) and some scores on measures of happiness and optimism. In this case, let's assume that a "5" indicates higher levels of happiness/optimism, and a "1" indicates lower levels. 
 
 Now that we're familiar with our data, we can get to work creating some plots. First, I recommend taking a look at {{< staticref "media/ggplot2-cheatsheet.pdf" "newtab" >}}this ggplot cheatsheet{{< /staticref >}}. It's an excellent reference for all aspects of ggplot, and can even be used to help you figure out which type of plot is most suitable for your data.
 
 
 Let's start with a simple scatterplot of the relationship between "Happiness" and "Optimism" scores. First, you'll want to start with:
+
 ```{r}
 ggplot()
 ```
+
 We'll now fill in the () with the specifications for our plot. The first piece of information ggplot needs is the dataframe we're working with. If you recall from above, we've named this dataframe "tutorial_csv". 
 
 ```{r}
 ggplot(data = tutorial_csv)
 ```
+
 Now let's add in our variables. After you specify your dataframe, you can specify your x and y variables in the plot's aesthetic properties:
 
 ```{r}
@@ -55,12 +60,20 @@ Next, we can add some information about the type of plot we're interested in. If
 ggplot(data = tutorial_csv, aes(x = Happiness, y = Optimism)) +
   geom_jitter(
 ```
+
 Now we need to fill those brackets with some information. Here, we can specify the colour of the dots, as well as their width and height.
 
 ```{r}
 ggplot(data = tutorial_csv, aes(x = Happiness, y = Optimism)) +
   geom_jitter(colour = "violetred4", width = 0.5, height = 0.5)
 ```
+
+If you run that code now, you should see a scatterplot appear in the "Plots" tab of the viewer. Yay! To save the plot, use ggsave() and specify the name of the plot, the file type, and the size of the image: 
+
+```{r}
+ggsave("Happiness_Optimism.png", width = 6, height = 6, dpi = 300)
+```
+
 You can also play around with the aesthetics of the plot. Select colours based on their names in R using {{< staticref "media/Rcolor.pdf" "newtab" >}}this handy chart,{{< /staticref >}} or enter the HEX values for any colour you like. You can even find some downloadable user-made colour palettes that will give your plots a nice cohesive look - [this Wes Anderson-inspired package](https://github.com/karthik/wesanderson) is a personal favourite. 
 
 
