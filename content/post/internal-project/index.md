@@ -22,7 +22,7 @@ R is a programming language that can be used to accomplish a wide variety of tas
 
 If you'd like to follow along with my plots, you can download {{< staticref "media/ggplot_tutorial_dataset.csv" "newtab" >}}this made-up dataset{{< /staticref >}}.
 
-First, you'll need to have R import the data. I like to use the function read_csv, which imports your data as a tibble; if you import the data this way, you'll need to install tidyverse and call readr from the library. Alternativele, you can just call the entire tiduverse, which will also call ggplot2. Here's how I imported my data: 
+First, you'll need to have R import the data. I like to use the function read_csv, which imports your data as a tibble; if you import the data this way, you'll need to install tidyverse and call readr from the library. Alternatively, you can just call the entire tidyverse, which will also call ggplot2. Here's how I imported my data: 
 
 ```{r}
 install.packages("tidyverse")
@@ -42,7 +42,7 @@ Let's start with a simple scatterplot of the relationship between "Happiness" an
 ggplot()
 ```
 
-We'll now fill in the () with the specifications for our plot. The first piece of information ggplot needs is the dataframe we're working with. If you recall from above, we've named this dataframe "tutorial_csv". 
+We'll now pass in the arguments for our plot. The first piece of information ggplot needs is the dataframe we're working with. If you recall from above, we've named this dataframe "tutorial_csv". 
 
 ```{r}
 ggplot(data = tutorial_csv)
@@ -58,7 +58,7 @@ Next, we can add some information about the type of plot we're interested in. If
 
 ```{r}
 ggplot(data = tutorial_csv, aes(x = Happiness, y = Optimism)) +
-  geom_jitter(
+  geom_jitter()
 ```
 
 Now we need to fill those brackets with some information. Here, we can specify the colour of the dots, as well as their width and height.
@@ -78,7 +78,7 @@ ggsave("Happiness_Optimism.png", width = 6, height = 6, dpi = 300)
 
 What about other types of plots? ggplot has got you covered. Let's try something a little more complex - a violin plot. 
 
-We start off with the same syntax, but this time, in addition to x and y variables, we also need a "fill" variable. The "fill" variable in a violin plot is what actually makes up our "violins". In this case, let's say we want to examine how age is differentially distributed by relationship status and sex, with one "violin"" showing us the data for males and the other "violin"" showing us the data from females. We would input the data as follows:
+We start off with the same syntax, but this time, in addition to x and y variables, we also need a "fill" variable. The "fill" variable in a violin plot is what actually makes up our "violins". In this case, let's say we want to examine how age is differentially distributed by relationship status and sex, with one "violin" showing us the data for males and the other "violin" showing us the data from females. We would input the data as follows:
 
 
 ```{r}
@@ -91,7 +91,7 @@ ggplot(relationship_csv, aes(x = LT_Relationship, y = Age, fill = Sex)) +
   geom_violin() +
 ```
 
-Finally, you can specify the colours of the plot. 
+Finally, you can specify the colours of the plot:
 
 ```{r}
 ggplot(relationship_csv, aes(x = LT_Relationship, y = Age, fill = Sex)) +
@@ -113,7 +113,7 @@ ggplot(relationship_csv, aes(x = Happiness, fill = LT_Relationship)) +
   geom_histogram()
 ```
 
-Then we can fill in the specifications for how the plot will look. We can use "colour" to give our bars an outline. "alpha" can be used to specify the transparency of our bars - a value of 1 makes the bars completely opaque, and a value of 0 will make the bars entirely transparent. With position, we can determine how our relationship status information is going to be displayed. The bars can either be stacked on top of each other (position ' 'stack') or we can have them overlap ('identity'). Finally, with binwidth, you dictate how the x-axis data is grouped. In this case, we want to see the number of people with scres at each happiness value, so our bin width shuld be 1. Let's give it a try:
+Then we can fill in the specifications for how the plot will look. We can use "colour" to give our bars an outline. "alpha" can be used to specify the transparency of our bars - a value of 1 makes the bars completely opaque, and a value of 0 will make the bars entirely transparent. With position, we can determine how our relationship status information is going to be displayed. The bars can either be stacked on top of each other (position 'stack') or we can have them overlap ('identity'). Finally, with binwidth, you dictate how the x-axis data is grouped. In this case, we want to see the number of people with scores at each happiness value, so our bin width should be 1. Let's give it a try:
 
 ```{r}
 ggplot(relationship_csv, aes(x = Happiness, fill = LT_Relationship)) +
@@ -133,6 +133,3 @@ And there you have it!
 Experiment with different elements of the ggplot function. I have a lot of fun playing around with the colours of my plots. Select colours based on their names in R using {{< staticref "media/Rcolor.pdf" "newtab" >}}this handy chart,{{< /staticref >}} or enter the HEX values for any colour you like. You can even find some downloadable user-made colour palettes that will give your plots a nice cohesive look - [this Wes Anderson-inspired package](https://github.com/karthik/wesanderson) is a personal favourite. 
 
 Hopefully, with this tutorial, you have a basic understanding of the functionality of ggplot2 and how to use it in your own data visualizations. Now go forth and ggplot!
-
-
-
