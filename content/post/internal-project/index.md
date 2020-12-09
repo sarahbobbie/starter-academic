@@ -1,5 +1,5 @@
 ---
-title: "Creating Beautiful, Informative Visualizations with R"
+title: "Create Beautiful, Informative Visualizations with R"
 external_link: ''
 date: '2016-04-27T00:00:00Z'
 links:
