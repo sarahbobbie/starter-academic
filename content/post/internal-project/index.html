@@ -417,17 +417,13 @@ summary {
 
 <p>R is a programming language that can be used to accomplish a wide variety of tasks. When managing a research project, R can serve as an excellent tool for nearly every step, from wrangling data to performing statistical analyses to producing effective visualizations. In this post, I will walk you through the basic steps of creating such visualizations using ggplot, a plotting package that provides a simple and intuitive way to create plots from your data.</p>
 <p>If you’d like to follow along with my plots, you can download {{&lt; staticref “media/ggplot_tutorial_dataset.csv” “newtab” &gt;}}this made-up dataset{{&lt; /staticref &gt;}}.</p>
-<p>First, you’ll need to have R import the data. I like to use the function read_csv, which imports your data as a tibble; if you import the data this way, you’ll need to install tidyverse and call readr from the library. Here’s how I imported my data:</p>
+<p>First, you’ll need to have R import the data. I like to use the function read_csv, which imports your data as a tibble; if you import the data this way, you’ll need to install tidyverse and call readr from the library. Alternativele, you can just call the entire tiduverse, which will also call ggplot2. Here’s how I imported my data:</p>
 <pre class="{r}"><code>install.packages(&quot;tidyverse&quot;)
-library(ggplot2)
 library(tidyverse)
-library(dplyr)
-library(readxl)
 
 tutorial_csv &lt;- read_csv(&quot;./ggplot_tutorial_dataset.csv&quot;)</code></pre>
 <p>Now let’s take a look at what kind of data we have. You’ll see that we have columns for participant ID, age, and sex, followed by their relationship status (“Yes” indicates that the participant is in a long-term relationship, whereas “No” indicates that they are not) and some scores on measures of happiness and optimism. In this case, let’s assume that a “5” indicates higher levels of happiness/optimism, and a “1” indicates lower levels.</p>
 <p>Now that we’re familiar with our data, we can get to work creating some plots. First, I recommend taking a look at {{&lt; staticref “media/ggplot2-cheatsheet.pdf” “newtab” &gt;}}this ggplot cheatsheet{{&lt; /staticref &gt;}}. It’s an excellent reference for all aspects of ggplot, and can even be used to help you figure out which type of plot is most suitable for your data.</p>
-<p>To use the ggplot package, you’ll need to call it:</p>
 <p>Let’s start with a simple scatterplot of the relationship between “Happiness” and “Optimism” scores. First, you’ll want to start with:</p>
 <pre class="{r}"><code>ggplot()</code></pre>
 <p>We’ll now fill in the () with the specifications for our plot. The first piece of information ggplot needs is the dataframe we’re working with. If you recall from above, we’ve named this dataframe “tutorial_csv”.</p>
