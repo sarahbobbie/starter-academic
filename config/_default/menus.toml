@@ -16,12 +16,12 @@
 
 [[main]]
   name = "Publications"
-  url = "#featured"
+  url = "#recentpublications"
   weight = 30
 
 [[main]]
   name = "Recent Presentations"
-  url = "#featured"
+  url = "#recentpresentations"
   weight = 40
 
 [[main]]
