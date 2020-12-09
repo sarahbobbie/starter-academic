@@ -6,7 +6,7 @@ date: "2020-11-17T00:00:00Z"
 doi: ""
 featured: true
 image:
-  caption: Poster
+  caption: 
   focal_point: ""
   preview_only: false
 links:

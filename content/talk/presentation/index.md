@@ -15,7 +15,7 @@ date: "2020-12-01T13:00:00Z"
 #event_url: https://example.org
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: ''
   focal_point: Right
 #links:
 #- icon: twitter
