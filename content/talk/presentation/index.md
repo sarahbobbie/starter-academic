@@ -29,14 +29,11 @@ publishDate: "2020-12-008T00:00:00Z"
 slides: Advisory Committee Proposal
 summary: My recent thesis proposal that I presented at my first advisory committee meeting.
 tags: []
-title: Example Talk
+title: MSc Thesis Proposal
 url_code: ""
 url_pdf: ""
 url_slides: "media/presentation.pdf"
 url_video: ""
 ---
 
-{{% alert note %}}
-Click on the **Slides** button above to view the built-in slides feature.
-{{% /alert %}}
 
