@@ -18,7 +18,7 @@ url_slides: ''
 url_video: ''
 ---
 
-R is a programming language that can be used to accomplish a wide variety of tasks. When managing a research project, R can serve as an excellent tool for nearly every step, from wrangling data to performing statistical analyses to producing effective visualizations. In this post, I will walk you through the basic steps of creating such visualizations using ggplot, a plotting package that provides a simple and intuitive way to create plots from your data.
+R is a programming language that can be used to accomplish a wide variety of tasks (including [creating this website!)](https://wowchemy.com/docs/). When managing a research project, R can serve as an excellent tool for nearly every step, from wrangling data to performing statistical analyses to producing effective visualizations. In this post, I will walk you through the basic steps of creating such visualizations using ggplot, a plotting package that provides a simple and intuitive way to create plots from your data.
 
 If you'd like to follow along with my plots, you can download {{< staticref "media/ggplot_tutorial_dataset.csv" "newtab" >}}this made-up dataset{{< /staticref >}}.
 
@@ -68,14 +68,42 @@ ggplot(data = tutorial_csv, aes(x = Happiness, y = Optimism)) +
   geom_jitter(colour = "violetred4", width = 0.5, height = 0.5)
 ```
 
-If you run that code now, you should see a scatterplot appear in the "Plots" tab of the viewer. Yay! To save the plot, use ggsave() and specify the name of the plot, the file type, and the size of the image: 
+If you run that code now, you should see a scatterplot appear in the "Plots" tab of the viewer. Yay! 
+
+To save the plot, use ggsave() and specify the name of the plot, the file type, and the size of the image: 
 
 ```{r}
 ggsave("Happiness_Optimism.png", width = 6, height = 6, dpi = 300)
 ```
 
-You can also play around with the aesthetics of the plot. Select colours based on their names in R using {{< staticref "media/Rcolor.pdf" "newtab" >}}this handy chart,{{< /staticref >}} or enter the HEX values for any colour you like. You can even find some downloadable user-made colour palettes that will give your plots a nice cohesive look - [this Wes Anderson-inspired package](https://github.com/karthik/wesanderson) is a personal favourite. 
+What about other types of plots? ggplot has got you covered. Let's try something a little more complex - a violin plot. 
 
+We start off with the same syntax, but this time, in addition to x and y variables, we also need a "fill" variable. The "fill" variable in a violin plot is what actually makes up our "violins". In this case, let's say we want to examine how age is differentially distributed by relationship status and sex, with one "violin"" showing us the data for males and the other "violin"" showing us the data from females. We would input the data as follows:
+
+
+```{r}
+ggplot(data = tutorial_csv, aes(x = LT_Relationship, y = Age, fill = Sex)) +
+```
+Next, we need to specify the type of plot (violin):
+
+```{r}
+ggplot(relationship_csv, aes(x = LT_Relationship, y = Age, fill = Sex)) +
+  geom_violin() +
+```
+
+Finally, you can specify the colours of the plot. 
+
+```{r}
+ggplot(relationship_csv, aes(x = LT_Relationship, y = Age, fill = Sex)) +
+  geom_violin() +
+  scale_fill_manual(values = c("lightpink1","lightskyblue1")) 
+```
+
+Voila! 
+
+Experiment with different elements of the ggplot function. I have a lot of fun playing around with the colours of my plots. Select colours based on their names in R using {{< staticref "media/Rcolor.pdf" "newtab" >}}this handy chart,{{< /staticref >}} or enter the HEX values for any colour you like. You can even find some downloadable user-made colour palettes that will give your plots a nice cohesive look - [this Wes Anderson-inspired package](https://github.com/karthik/wesanderson) is a personal favourite. 
+
+Hopefully, with this tutorial, you have a basic understanding of the functionality of ggplot2 and how to use it in your own data visualizations. Now go forth and ggplot!
 
 
 
