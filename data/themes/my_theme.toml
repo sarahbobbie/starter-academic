@@ -13,9 +13,12 @@ menu_text = "#430E00"
 menu_text_active = "#D9A34B"
 menu_title = "#D9A34B"
 
-# Home sections
-#home_section_odd = "rgb(255, 255, 255)"
-#home_section_even = "rgb(247, 247, 247)"
+# Backgrounds
+background = "#ECD1CA"
+home_section_odd = "#ECD1CA"
+home_section_even = "#ECD1CA"
+
+font = "rose"
 
 #beige: #E7A396
 #bordeaux: #9F295D
