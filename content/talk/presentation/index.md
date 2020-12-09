@@ -28,19 +28,19 @@ projects:
 publishDate: "2020-12-008T00:00:00Z"
 slides: Advisory Committee Proposal
 summary: My recent thesis proposal that I presented at my first advisory committee meeting.
-#tags: []
-title: Advisory Committee Proposal
+tags: []
+title: Example Talk
 url_code: ""
-url_pdf: "media/presentation.pdf""
+url_pdf: "media/presentation.pdf"
 url_slides: ""
 url_video: ""
 ---
 
-#{{% alert note %}}
-#Click on the **Slides** button above to view the built-in slides feature.
-#{{% /alert %}}
+{{% alert note %}}
+Click on the **Slides** button above to view the built-in slides feature.
+{{% /alert %}}
 
-#Slides can be added in a few ways:
+Slides can be added in a few ways:
 
 - **Create** slides using Academic's [*Slides*](https://sourcethemes.com/academic/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
 - **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
