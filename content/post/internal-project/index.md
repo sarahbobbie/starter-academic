@@ -22,7 +22,7 @@ R is a programming language that can be used to accomplish a wide variety of tas
 
 If you'd like to follow along with my plots, you can download {{< staticref "media/ggplot_tutorial_dataset.csv" "newtab" >}}this made-up dataset{{< /staticref >}}.
 
-<img src="post/internal-project/featured.jpg">
+<img src="/post/internal-project/featured.jpg">
 ```{r}
 ![Sarah's first image](post/internal-project/featured.jpg)
 ```
